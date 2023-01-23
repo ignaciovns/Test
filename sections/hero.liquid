@@ -1,0 +1,46 @@
+<section class="container py-5">
+  <div class="row">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1>Example</h1>
+      <p>This is n example</p>
+      <a href="#">Shop now </a>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Hero",
+  "class": "hero-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Example heading",
+      "label": "Heading Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "default": "<p>This is n example</p>",
+      "label": "Heading description"
+    },
+    {
+      "type": "text",
+      "id": "button-label",
+      "default": "Button",
+      "label": "Heading button label"
+    },
+    {
+      "type": "url",
+      "id": "button-link",
+      "label": "Heading button link"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Hero",
+      "name": "Hero example"
+    }
+  ]
+}
+{% endschema %}
